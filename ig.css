@@ -1,0 +1,206 @@
+form, h1 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-shadow: #000 3px 3px 0;
+    color: #fff;
+    text-align: center;
+}
+.animate>span>span, .meter>span, .meter>span:after {
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    overflow: hidden;
+}
+.meter>span, body {
+}
+form, h1, span.mesg, span.mesg2 {
+    text-align: center;
+}
+#thumb, #thumb img, .meter {
+    margin: 0 auto;
+}
+* {
+    outline: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12px;
+    color: #FFF;
+    background: #2f2f2f;
+    text-shadow: #000 1px 1px 0;
+}
+h1 {
+    font-size: 450%}
+h1 a {
+    font-size: 85px;
+    text-decoration: none;
+}
+.meter {
+    height: 30px;
+    position: relative;
+    padding: 50px;
+    width: 50%}
+.meter>span {
+    display: block;
+    height: 100%;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    background-color: #2bc253;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2bc253), color-stop(1, #54f054));
+    background-image: -moz-linear-gradient(center bottom, #2bc253 37%, #54f054 69%);
+    -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, .3), inset 0 -2px 6px rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, .3), inset 0 -2px 6px rgba(0, 0, 0, .4);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, .3), inset 0 -2px 6px rgba(0, 0, 0, .4);
+    position: relative;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+.animate>span>span, .meter>span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent));
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    z-index: 1;
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+    -webkit-animation: move 2s linear infinite;
+    -moz-animation: move 2s linear infinite;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -webkit-border-radius: 20px 8px 8px 20px;
+    border-radius: 20px 8px 8px 20px;
+}
+.animate>span:after {
+    display: none;
+}
+@-webkit-keyframes move {
+    0% {
+    background-position: 0 0;
+}
+100% {
+    background-position: 50px 50px;
+}
+}@-moz-keyframes move {
+    0% {
+    background-position: 0 0;
+}
+100% {
+    background-position: 50px 50px;
+}
+}.orange>span {
+    background-color: #f1a165;
+    background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f1a165), color-stop(1, #f36d0a));
+    background-image: -webkit-linear-gradient(#f1a165, #f36d0a);
+}
+.red>span {
+    background-color: #f0a3a3;
+    background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0a3a3), color-stop(1, #f42323));
+    background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+}
+.nostripes>span:after, .nostripes>span>span {
+    -webkit-animation: none;
+    -moz-animation: none;
+    background-image: none;
+}
+input[type=submit], input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 40px;
+}
+span.mesg {
+    font-size: 30px;
+    display: block;
+}
+span.mesg2 {
+    font-size: 14px;
+    display: block;
+}
+#tobalt a {
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 1px dashed #fff;
+}
+#thumb {
+    max-width: 500px;
+    text-align: center;
+}
+#thumb img {
+    width: 300px;
+    display: block;
+}
+ .error {
+    font-weight: bold;
+     background:  rgba(1, 0, 0, 0.3);
+     width:  50%;
+     margin:  0 auto;
+     padding: 10px;
+     border-radius: 5px;
+}
+.alert {
+    font-weight: bold;
+     background:  rgba(1, 0, 0, 0.3);
+     width:  70%;
+     margin:  0 auto;
+     padding: 10px;
+     border-radius: 5px;
+}
+
+
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)  {
+    
+	input[type=text]  {
+     max-width:  280px;
+ }
+ h1 a {
+    font-size: 55px;
+    text-decoration: none;
+}
+ span.mesg {
+    font-size: 20px;
+    display: block;
+}
+}
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)  {
+    
+	input[type=text]  {
+     max-width:  280px;
+ }
+ h1 a {
+    font-size: 55px;
+    text-decoration: none;
+}
+ span.mesg {
+    font-size: 20px;
+    display: block;
+}
+}
+/* ----------- iPhone 6 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)  {
+     
+	input[type=text]  {
+     max-width:  320px;
+ }
+
+}
+/* ----------- iPhone 6+ ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait)  {
+     
+	input[type=text]  {
+     max-width:  320px;
+ }
+
+}
